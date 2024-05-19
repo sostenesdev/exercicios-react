@@ -7,6 +7,11 @@ export default props =>{
         <div>
             <If test={usuario && usuario.nome}>
                 Seja bem vindo(a), <strong>{props.usuario.nome}</strong>
+                <Else>
+                    <div>
+                        Faça login!!!
+                    </div>
+                </Else>
             </If>
         </div>
     )
