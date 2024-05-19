@@ -9,12 +9,20 @@ import ListaAlunos from "./components/repeticao/ListaAlunos"
 import Produtos from "./components/repeticao/Produtos"
 import ParOuImpar from "./components/condicional/ParOuImpar"
 import UsuarioInfo from "./components/condicional/UsuarioInfo"
+import DiretaPai from "./components/comunicacao/DiretaPai"
+import IndiretaPai from "./components/comunicacao/IndiretaPai"
 
 
 
 let App  = (props) =>{
     return (<div className="card-list">
-        <Card titulo="#07 - Renderização Condicional" color='#F08080'>
+        <Card titulo="#10 - Comunicação Indireta" color='#F3E5AB'>
+            <IndiretaPai />
+        </Card>
+        <Card titulo="#09 - Comunicação direta" color='#DA70D6'>
+            <DiretaPai />
+        </Card>
+        <Card titulo="#07 - Renderização Condicional" color='#CD7F32'>
             <UsuarioInfo usuario = {{nome : "João da Silva"}}/>
             <UsuarioInfo usuario = {{email : "teste@teste.com"}}/>
             <UsuarioInfo usuario = {{nome : "José Santana"}}/>
