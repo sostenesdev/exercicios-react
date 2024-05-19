@@ -7,11 +7,21 @@ import Familia from "./components/basicos/Familia"
 import FamiliaMembro from "./components/basicos/FamiliaMembro"
 import ListaAlunos from "./components/repeticao/ListaAlunos"
 import Produtos from "./components/repeticao/Produtos"
+import ParOuImpar from "./components/condicional/ParOuImpar"
+import UsuarioInfo from "./components/condicional/UsuarioInfo"
 
 
 
 let App  = (props) =>{
     return (<div className="card-list">
+        <Card titulo="#07 - Renderização Condicional" color='#F08080'>
+            <UsuarioInfo usuario = {{nome : "João da Silva"}}/>
+            <UsuarioInfo usuario = {{email : "teste@teste.com"}}/>
+            <UsuarioInfo usuario = {{nome : "José Santana"}}/>
+        </Card>
+        <Card titulo="#07 - Renderização Condicional" color='#F08080'>
+            <ParOuImpar numero = '11' />
+        </Card>
         <Card titulo="Produtos" color='#F08080'>
             <Produtos color='#F08080' />
         </Card>
