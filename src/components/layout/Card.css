@@ -1,0 +1,22 @@
+.card{
+    border-radius: 30px solid;
+    margin-bottom: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.card-body{
+    background-color: white;
+    color:black;
+    padding: 10px;
+    margin: 5px;
+    flex: 1; /*conteudo pega o resto do conteudo disponivel*/
+}
+
+.card-title{
+    color:black;
+    font-size: large;
+    padding: 5px;
+}
