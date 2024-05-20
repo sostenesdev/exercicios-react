@@ -11,11 +11,15 @@ import ParOuImpar from "./components/condicional/ParOuImpar"
 import UsuarioInfo from "./components/condicional/UsuarioInfo"
 import DiretaPai from "./components/comunicacao/DiretaPai"
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
+import Input from "./components/formulario/Input"
 
 
 
 let App  = (props) =>{
     return (<div className="card-list">
+        <Card titulo="#11 - Componente Controlado" color='#40E0D0'>
+            <Input />
+        </Card>
         <Card titulo="#10 - Comunicação Indireta" color='#F3E5AB'>
             <IndiretaPai />
         </Card>

@@ -25,3 +25,8 @@ table {
     background-color: #04AA6D;
     color: white;
   }
+
+  input{
+    font-size: large;
+    margin-bottom: 6px;;
+  }
